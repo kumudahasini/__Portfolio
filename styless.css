@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(135deg, #1c1c1c, #333333);
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.skills-section h2 {
+    margin-bottom: 20px;
+}
+
+.skills-section p {
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow categories to wrap on smaller screens */
+}
+
+.skill-category {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px; /* Adjust as needed */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.skill-category h3 {
+    color: #64ffda;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skill-category li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.skill-category li img {
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+    margin-right: 10px;
+}
+.icons{
+    border: 2px solid  #64ffda;
+    border-radius: 5px;
+    background-color:rgb(31, 31, 31);
+    text-align: center;
+    height: 25px;
+}
+.icons:hover{
+        background-color:  #64ffda ;
+        color: black;
+
+}
+
+/* Media Query for smaller screens (phones and tablets) */
+@media (max-width: 768px) {
+    .skill-category {
+        width: 90%; /* Make categories take up more width on smaller screens */
+        margin: 10px auto; /* Center categories */
+    }
+
+    .skills-section {
+        padding: 30px 10px; /* Reduce padding */
+    }
+
+    .skills-section h2 {
+        font-size: 1.8em; /* Adjust font size */
+    }
+
+    .skills-section p {
+        font-size: 0.9em; /* Adjust font size */
+    }
+}
