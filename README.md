@@ -2,7 +2,7 @@
 
 Welcome to my portfolio README file!
 
-Live Website: https://kumudahasini.github.io/__Portfolio/
+Live Website: 
 
 This is my portfolio created using HTML, CSS, and JavaScript. It showcases my skills, projects, and contact information.
 
