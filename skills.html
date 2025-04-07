@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Skills</title>
     <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="nav.css">
+
     <style>
          
 
     </style> 
 </head>
 <body>
-    <nav class="button" style="display: flex;justify-content: flex-end ; gap:5px; ">
-        <a href="index.html"target="_self">Home</a>
-        <a href="about1.html" target="_self" >About</a>
-         
-        <a href="project2.html" target="_self">Projects</a>
-        <a href="Contactme.html" target="_self"> Contact me</a>
+    <nav class="navbar">
+        <div class="logo">MySite</div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
         
-        
-       </nav>
-        
-
+        <ul class="nav-links">
+            <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="about1.html" target="_self"> About</a>
+    
+            <li><a href="project2.html" target="_self">Projects</a></li>
+            <li><a href="skills.html" target="_self">Skills</a></li>
+            <li><a href="Contactme.html" target="_self"> Contact me</a>
+                
+    </li>
+        </ul>
+    </nav>
     <section class="skills-section" style="margin-top: 150px;">
         <h2>My Skills</h2>
         <p>Here are some of the languages I am familiar with :</p>
