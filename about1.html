@@ -7,90 +7,117 @@
     <title>Document</title>
 <style>
   body {
-    background: linear-gradient(135deg, #1c1c1c, #333333); 
-    font-family: sans-serif; 
-    margin: 0; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-  }
-
-  .content {
-    width: 600px; 
-    background-color:rgb(200, 197, 197);
-    padding: 30px;
-    border-radius: 10px; 
-    
-    text-align: center;
-    box-shadow: 0 4px 8px  #64ffda;
-  }
-
-  .photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%; 
-    object-fit: cover; 
-    border: 5px solid #64ffda; 
-    margin-bottom: 20px;
-    transition: transform 0.3s ease; 
-  }
-
-  .photo:hover {
-    transform: scale(1.1); 
-  }
-
-  p {
-    line-height: 1.6; 
-    color: #333; 
-  }
+      background: linear-gradient(135deg, #1c1c1c, #333333);
+      font-family: sans-serif;
+      margin: 0;
+      min-height: 100vh;
+    }
 
 
-  
- 
-        @media (max-width: 768px) {
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding-top: 80px; 
+      box-sizing: border-box;
+    }
+
     .content {
-        padding: 15px; 
+      width: 600px;
+      background-color: rgb(200, 197, 197);
+      padding: 30px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      box-shadow: 0 4px 8px #64ffda;
     }
 
     .photo {
-        width: 120px; 
-        height: 120px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #64ffda;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .photo:hover {
+      transform: scale(1.1);
     }
 
     p {
-        font-size: 0.85em; 
+      line-height: 1.6;
+      color: #333;
     }
-}  
+
+    button {
+      background-color: aqua;
+      border-radius: 5px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #00e6e6;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        padding: 15px;
+        width: 90%;
+      }
+
+      .photo {
+        width: 120px;
+        height: 120px;
+      }
+
+      p {
+        font-size: 0.85em;
+      }
+    }
+ 
 </style>
 </head>
 <body>
 <nav class="navbar">
-    <div class="logo">MySite</div>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
-    <label for="menu-toggle" class="hamburger">&#9776;</label>
-    
-    <ul class="nav-links">
-        <a href="index.html"target="_self">Home</a>
-        <a href="about1.html" target="_self" >About</a>
-                <li><a href="skills.html" target="_self">Skills</a></li>
+  <div class="logo">MySite</div>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+  <label for="menu-toggle" class="hamburger">&#9776;</label>
 
-        <li><a href="project2.html" target="_self">Projects</a></li>
-        
-        <li><a href="Contactme.html" target="_self"> Contact me</a>
-</li>
-    </ul>
+  <ul class="nav-links">
+    <a href="index.html" target="_self">Home</a>
+    <a href="about1.html" target="_self">About</a>
+    <li><a href="project2.html" target="_self">Projects</a></li>
+    <li><a href="skills.html" target="_self">Skills</a></li>
+
+    <li><a href="Contactme.html" target="_self">Contact me</a></li>
+  </ul>
 </nav>
 
-
-<div class="content">
-  <img class="photo" src="profile1.jpg">
-  <p>Hloo MYSELF Hasini kalamraju. I am an UG student.</p>
+<main class="main-container">
+  <div class="content">
+    <img class="photo" src="profile1.jpg" alt="Profile Photo of Hasini Kalamraju" />
+    <p>Hloo MYSELF Hasini kalamraju. I am an UG student.</p>
   <p>Currently navigating the exciting challenges of a computer science degree at Amrita university, I'm building a strong foundation for a future in the field of coding.</p>
   <p>My goal is to create websites that are both beautiful and useful. I think the internet is an amazing place to connect people, and I want to be a part of building that. I am excited to share my projects and my journey with you.</p>
   <p> wanna know more about me look at my resume once.</p>
-  <a href="hasiniresume.jpg" target="_blank"><button style="background-color: aqua;border-radius: 5px;">Resume</button></a>
-</div>
+    <a href="hasiniresume.jpg" target="_blank">
+      <button>Resume</button>
+    </a>
+  </div>
+</main>
+
+
 
 </body>
 </html>
